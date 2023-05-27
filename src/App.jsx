@@ -5,6 +5,7 @@ import Particles from 'react-particles'
 import particles_config from "./utils/particles.config"
 import { useCallback } from 'react'
 import { loadFull } from 'tsparticles'
+import Sobre from './components/sobre'
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -26,7 +27,7 @@ function App() {
       />
 
       <div>
-
+      
         <Navbar />
         <Home />
       </div>
