@@ -31,6 +31,7 @@ function App() {
       
         <Navbar />
         <Home />
+        <Sobre/>
         <SocialLinks />
       </div>
     </>
