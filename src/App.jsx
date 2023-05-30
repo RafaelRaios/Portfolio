@@ -6,6 +6,7 @@ import particles_config from "./utils/particles.config"
 import { useCallback } from 'react'
 import { loadFull } from 'tsparticles'
 import Sobre from './components/sobre'
+import SocialLinks from './components/SocialLinks'
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -30,6 +31,7 @@ function App() {
       
         <Navbar />
         <Home />
+        <SocialLinks />
       </div>
     </>
   )
