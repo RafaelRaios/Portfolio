@@ -1,5 +1,6 @@
 import Navbar from './components/navbar'
 import Home from './components/home'
+import Feitos from './components/feitos'
 import './App.css'
 import Particles from 'react-particles'
 import particles_config from "./utils/particles.config"
@@ -7,6 +8,7 @@ import { useCallback } from 'react'
 import { loadFull } from 'tsparticles'
 import Sobre from './components/sobre'
 import SocialLinks from './components/SocialLinks'
+import Contact from './components/contact'
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -32,6 +34,8 @@ function App() {
         <Navbar />
         <Home />
         <Sobre/>
+        <Feitos/>
+        <Contact />
         <SocialLinks />
       </div>
     </>
