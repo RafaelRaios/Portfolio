@@ -12,3 +12,15 @@
     font-family: 'Roboto Mono', monospace;
   }
 }
+
+.maior:hover .menor{
+  transform: translateX(200000);
+}
+
+
+@media (min-width: 768px) {
+  .icone:hover .nome{
+    display: inline-flex;
+    
+  }
+}

@@ -8,9 +8,9 @@ const SocialLinks = () => {
         {   
             id: 1,
             child: (
-                <>
-                    <FaGithub size={30}/> <samp className="hidden md:flex">Github</samp>
-                </>
+                <div className="flex items-center ">
+                    <FaGithub size={30}/> <span className="hidden nome mx-3 ">Github</span>
+                </div>
             ),
             href: "https://github.com/RafaelRaios",
             style: "rounded-tr-md"
@@ -18,9 +18,9 @@ const SocialLinks = () => {
         {   
             id: 2,
             child: (
-                <>
-                   <FaInstagram size={30}/> <samp className="hidden md:flex">Instagram</samp>
-                </>
+                <div className="flex items-center">
+                   <FaInstagram size={30}/> <span className="hidden nome mx-3 ">Instagram</span>
+                </div>
             ),
             href: "https://www.instagram.com/rios.d.rafael/",
             style: "rounded-tr-md"
@@ -28,9 +28,9 @@ const SocialLinks = () => {
         {   
             id: 3,
             child: (
-                <>
-                   <FaLinkedin size={30}/> <samp className="hidden md:flex">Linkedin</samp>
-                </>
+                <div className="flex items-center">
+                   <FaLinkedin size={30}/> <span className="hidden nome mx-3 ">Linkedin</span>
+                </div>
             ),
             href: "https://www.linkedin.com/in/rafael-rios-937645267/",
             style: "rounded-tr-md"
@@ -41,7 +41,7 @@ const SocialLinks = () => {
 
     const socialL = links.map((link) => 
                 
-                <li className={" text-white hover:text-yellow-100 md:my-2 mx-3 md:mx-0 " + " " + link.style} 
+                <li className={" text-white md:hover:text-yellow-100 md:my-2 mx-3 md:mx-0 icone" + " " + link.style} 
                 key={link.id}>
 
                     <a href={link.href} target="blank"> {link.child} </a>
@@ -50,7 +50,7 @@ const SocialLinks = () => {
                )
 
     return (
-        <div className=" items-center w-full text-white fixed px-4 md:top-[70%] top-[90%]
+        <div className=" items-center  text-white fixed px-4 md:top-[80%] top-[90%]
            flex">
             <ul className="flex md:inline ">
                 {socialL}
