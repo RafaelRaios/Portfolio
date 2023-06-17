@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillFileText, AiOutlineVerticalAlignBottom } from "react-icons/ai";
 
 const Sobre = () => {
 
@@ -34,7 +35,12 @@ const Sobre = () => {
                       consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil 
                       molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </p>
+                <div className="flex items-center">
+                    <p>curriculo</p>
+                    <AiOutlineVerticalAlignBottom />
+                </div>
             </div>
+            
         </div>
     )
 }

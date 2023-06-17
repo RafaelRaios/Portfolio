@@ -1,6 +1,5 @@
 import React from "react"
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
-import { AiFillFileText } from "react-icons/ai"
 
 const SocialLinks = () => {
     

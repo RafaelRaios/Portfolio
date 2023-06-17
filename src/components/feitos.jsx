@@ -37,7 +37,7 @@ const Feitos = () => {
     return (
         <div name="portfolio" className="  items-center">
             <div className="flex my-16">
-                <button className="text-gray-700 hover:scale-110 bg-gray-100/50 rounded-full duration-200 scale-50 md:scale-100
+                <button className="text-gray-700 md:hover:scale-110 bg-gray-100/50 rounded-full duration-200 scale-50 md:scale-100
                 my-auto md:mx-5"
                 onClick={() => {
                     
@@ -55,7 +55,7 @@ const Feitos = () => {
                 
                 {repositorio[index].child}
 
-                <button className="text-gray-700 hover:scale-110 bg-gray-100/50 rounded-full duration-200 scale-50 md:scale-100 
+                <button className="text-gray-700 md:hover:scale-110 bg-gray-100/50 rounded-full duration-200 scale-50 md:scale-100 
                 my-auto md:mx-5"
                 onClick={() => {
                     
