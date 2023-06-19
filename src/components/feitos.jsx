@@ -9,12 +9,14 @@ const Feitos = () => {
         {
             img: site,
             child: (
-                <div className="scale-25 md:scale-75 bg-gradient-to-t from-cyan-600 from-45% to-blue-400/90 p-4 rounded-md">
+                <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md
+                max-w-screen-lg mx-auto ">
+                    <h2 className="text-white text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4">Porftolio</h2>
                     <a href="https://github.com/RafaelRaios/Portfolio" target="blank"><img src={site} alt="" link/></a>
-                    <p className="text-white my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+                    <p className="text-white my-4 font-base justify-center items-center">Esse é um site pessoal, ou um portfolio, com o intuito de listar minhas habilidades
+                    como programador assim como links sociais que ajudem a me mostrar melhor quem é Rafael Rios, de modo a facilitar para alguem que esteja
+                     interessado em me contratar como profissional verificar se sou a pessoa adequada ao trabalho, assim como funcionar como uma maneira de colocar 
+                     parte dessas habilidadesem prática</p>
                 </div>
             )
             
@@ -22,13 +24,18 @@ const Feitos = () => {
         {
             img: alagoano,
             child: (
-                <div className="scale-25 md:scale-75 bg-gradient-to-t from-cyan-600 from-45% to-blue-400/90 p-4 rounded-md">
+                <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md items-center
+                mx-auto max-w-screen-lg">
+                    <h2 className="text-white text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4">Alagoaninho Adventures</h2>
                     <a href="https://github.com/RafaelRaios/Alagoaninho-Adventures" target="blank"><img src={alagoano} alt="" link/></a>
-                    <p className="text-white my-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+                    <p className="text-white my-4 font-base justify-center items-center ">
+                    Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
+                    Adventures é um jogo de plataforma baseado em jogos como I Wanna be The Guy e cat mario, assim como um toque cômico do 
+                    jogo brasileiro Mineirinho Ultra Adventures, substituido por Alagoaninho já que vim de Maceió, em resumo esse jogo é um 
+                    jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitadas como plataformas que 
+                    matam o jogador ao pousar nela. Nesse jogo eu fui responsável pelo game desing, pelos sprites, pela programação do atirador,
+                    do personagem principal e pelas telas de vitória e derrota
+                    </p>
                 </div>
             )
         }
