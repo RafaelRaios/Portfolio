@@ -6,9 +6,9 @@ const Sobre = () => {
     
 
     return (
-          <div className="w-full h-screen">
-            <div name="sobre mim" className=" bg-gradient-to-r from-cyan-700 from-45% to-blue-400/90 ">
-            <div className="flex flex-col items-center text-white max-w-screen-lg mx-auto justify-center p-4">
+          
+        <div name="sobre mim" className="w-full bg-gradient-to-r from-cyan-700 from-45% to-blue-400/90 ">
+            <div className="flex flex-col items-center text-white max-w-screen-lg mx-auto justify-center p-4 ">
                 <div className="scale-150 font-signature mt-5">
                     <h2> Sobre mim: </h2>
                 </div>
@@ -40,10 +40,10 @@ const Sobre = () => {
                     <p>curriculo</p>
                     <AiOutlineVerticalAlignBottom />
                 </div>
-            </div>
-            
-            </div>
         </div>
+            
+        </div>
+        
     )
 }
 
