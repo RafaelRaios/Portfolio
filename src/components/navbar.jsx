@@ -31,7 +31,8 @@ const Navbar = () => {
     )
 
     const menusV = Links.map((link) => 
-        <li key={link.id} className="flex text-4xl font-base py-6 capitalize text-gray-400 hover:text-yellow-100 hover:scale-110 cursor-pointer">
+        <li key={link.id} className="flex text-4xl font-base py-6 capitalize text-gray-400 hover:text-yellow-100
+         hover:scale-110 cursor-pointer">
             <Link to={link.lin} smooth duration={500} onClick={() => {setNav(!nav)}}>{link.lin}</Link>
         </li>
     )

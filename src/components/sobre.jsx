@@ -7,7 +7,7 @@ const Sobre = () => {
 
     return (
           
-        <div name="sobre mim" className="w-full bg-gradient-to-r from-gray-900/90 from-45% to-neutral-800/90 ">
+        <div name="sobre mim" className="w-full h-screen bg-gradient-to-r from-gray-900/90 from-45% to-neutral-800/90 ">
             <div className="flex flex-col items-center text-white max-w-screen-lg mx-auto justify-center p-4 ">
                 <div className="scale-150 font-signature mt-5">
                     <h2> Sobre mim: </h2>

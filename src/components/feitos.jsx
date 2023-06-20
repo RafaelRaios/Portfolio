@@ -5,6 +5,14 @@ import site from "../assets/images/site.png"
 
 const Feitos = () => {
     const [index, setIndex] = useState(0)
+    const [text1, setText1] = useState(false)
+
+    const texts = [
+        {
+            
+        }
+    ]
+
     const repositorio = [
         {
             img: site,
