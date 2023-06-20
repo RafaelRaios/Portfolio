@@ -13,10 +13,14 @@
   }
 }
 
-.maior:hover .menor{
-  transform: translateX(200000);
-}
 
+@media (min-width: 768px) {
+  .maior:hover .menor{
+    padding-left: 27% ;
+    transition-duration: 500ms;
+  }
+  
+}
 
 @media (min-width: 768px) {
   .icone:hover .nome{
@@ -24,3 +28,4 @@
     
   }
 }
+

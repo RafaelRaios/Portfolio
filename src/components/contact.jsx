@@ -24,8 +24,8 @@ const Contact = () => {
                     <textarea name="message" rows={10} placeholder='digite aqui sua mensagem'
                     className='p-2 bg-gray-700/50 text-white border-2 focus:outline-none rounded-md '></textarea>
 
-                    <button type='submit' className='bg-gradient-to-t from-gray-200/90 from-45% to-neutral-100/40 px-6 py-2
-                    rounded-md hover:px-10 duration-300 cursor-pointer mx-auto my-6 flex maior'>
+                    <button type='submit' className='bg-gradient-to-t from-gray-200/50 from-45% to-neutral-100/40 px-6 py-2
+                    rounded-md hover:pr-6 duration-200 cursor-pointer mx-auto my-6 flex maior'>
                         <div className='flex items-center font-signature font-bold'>
                             Enviar <div className='menor'><BiChevronRight size={30}/></div>
                         </div>

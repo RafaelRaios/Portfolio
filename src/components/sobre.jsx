@@ -7,7 +7,7 @@ const Sobre = () => {
 
     return (
           
-        <div name="sobre mim" className="w-full h-screen bg-gradient-to-r from-gray-900/90 from-45% to-neutral-800/90 ">
+        <div name="sobre mim" className="w-full md:h-screen bg-gradient-to-r from-gray-900/90 from-45% to-neutral-800/90 ">
             <div className="flex flex-col items-center text-white max-w-screen-lg mx-auto justify-center p-4 ">
                 <div className="scale-150 font-signature mt-5">
                     <h2> Sobre mim: </h2>
@@ -37,7 +37,7 @@ const Sobre = () => {
                       molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </p>
                 <div className="flex items-center bg-gradient-to-t from-gray-200/90 from-45% to-neutral-100/90 text-black p-3
-                rounded-full hover:cursor-pointer hover:scale-110 duration-300">
+                rounded-full hover:cursor-pointer hover:scale-110 duration-300 md:my-20">
                     <p>curriculo</p>
                     <AiOutlineVerticalAlignBottom />
                 </div>
