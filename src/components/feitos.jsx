@@ -48,7 +48,7 @@ const Feitos = () => {
                     Adventures é um jogo de plataforma baseado em jogos como I Wanna be The Guy e cat mario, assim como um toque cômico do 
                     jogo brasileiro Mineirinho Ultra Adventures,  em resumo esse jogo é um 
                     jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitadas 
-                    <samp className=" cursor-pointer" onClick={() => setText1(!text1)}> como plataformas que  matam o jogador ao pousar nela.
+                    <samp className="text-white my-4 font-base justify-center items-center cursor-pointer" onClick={() => setText1(!text1)}> como plataformas que  matam o jogador ao pousar nela.
                          Nesse jogo eu fui responsável pelo game desing, pelos sprites, 
                          pela programação do atirador,do personagem principal e pelas
                           telas de vitória e derrota</samp></p> }

@@ -9,6 +9,7 @@ import { loadFull } from 'tsparticles'
 import Sobre from './components/sobre'
 import SocialLinks from './components/SocialLinks'
 import Contact from './components/contact'
+import Experience from './components/experience'
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -35,6 +36,7 @@ function App() {
         <Home />
         <Sobre/>
         <Feitos/>
+        <Experience />
         <Contact />
         <SocialLinks />
       </div>
