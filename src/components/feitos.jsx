@@ -7,29 +7,14 @@ const Feitos = () => {
     const [index, setIndex] = useState(0)
     const [text1, setText1] = useState(false)
 
-    const texts = [
-        {
-            
-        }
-    ]
+    
 
     const repositorio = [
         {
             img: site,
             child: (
                 <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md
-                max-w-screen-lg mx-auto "
-                onClick={() => {
-                    
-                    console.log(index)
-                    if(index > 0) {
-                        setIndex(index - 1)
-                    }
-                    else {
-                        setIndex(repositorio.length - 1)
-                    }
-                    
-                }}>
+                max-w-screen-lg mx-auto ">
                     <h2 className="text-white text-3xl md:text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4">Porftolio</h2>
                     <a href="https://github.com/RafaelRaios/Portfolio" target="blank"><img src={site} alt="" link/></a>
                     <p className="text-white my-4 font-base justify-center items-center">Esse é um site pessoal, ou um portfolio, com o intuito de listar minhas habilidades
@@ -44,30 +29,30 @@ const Feitos = () => {
             img: alagoano,
             child: (
                 <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md items-center
-                max-w-screen-lg mx-auto"
-                onClick={() => {
-                    
-                    console.log(index)
-                    if(index > 0) {
-                        setIndex(index - 1)
-                    }
-                    else {
-                        setIndex(repositorio.length - 1)
-                    }
-                    
-                }}>
+                max-w-screen-lg mx-auto">
                     <h2 className="text-white text-2xl md:text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4">Alagoaninho Adventures</h2>
                     <a href="https://github.com/RafaelRaios/Alagoaninho-Adventures" target="blank"
                     className="flex ">
                         <img src={alagoano} alt="" link/>
                     </a>
-                    <p className="text-white my-4 font-base justify-center items-center ">
-                    Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
+                    <p className="text-white my-4 font-base justify-center items-center">
+                    
+                    <div >
+                    {!text1 && <p className="">Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
                     Adventures é um jogo de plataforma baseado em jogos como I Wanna be The Guy e cat mario, assim como um toque cômico do 
                     jogo brasileiro Mineirinho Ultra Adventures,  em resumo esse jogo é um 
-                    jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitadas como plataformas que 
-                    matam o jogador ao pousar nela. Nesse jogo eu fui responsável pelo game desing, pelos sprites, pela programação do atirador,
-                    do personagem principal e pelas telas de vitória e derrota
+                    jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitada
+                    s  ... <samp className="text-cyan-400 cursor-pointer" onClick={() => setText1(!text1)}>Read More</samp></p> }
+                    
+                    {text1 && <p>Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
+                    Adventures é um jogo de plataforma baseado em jogos como I Wanna be The Guy e cat mario, assim como um toque cômico do 
+                    jogo brasileiro Mineirinho Ultra Adventures,  em resumo esse jogo é um 
+                    jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitadas 
+                    <samp className=" cursor-pointer" onClick={() => setText1(!text1)}> como plataformas que  matam o jogador ao pousar nela.
+                         Nesse jogo eu fui responsável pelo game desing, pelos sprites, 
+                         pela programação do atirador,do personagem principal e pelas
+                          telas de vitória e derrota</samp></p> }
+                    </div>
                     </p>
                 </div>
             )
@@ -96,8 +81,8 @@ const Feitos = () => {
                 
                 {repositorio[index].child}
 
-                <button className="hidden md:flex text-gray-700 md:hover:scale-110 bg-gray-100/50 rounded-full duration-200 scale-50 md:scale-100 
-                my-auto md:mx-5"
+                <button className=" inline-block md:flex text-gray-700 md:hover:scale-110 bg-gray-100/50 rounded-full duration-200 scale-50 md:scale-100 
+                md:my-auto md:mx-5"
                 onClick={() => {
                     
                     console.log(index)
