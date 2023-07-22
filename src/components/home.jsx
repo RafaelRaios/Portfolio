@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect"
 
 
 const Home = () => {
-    const skills = ['Python', 'C', ' C++', 'HTML', "CSS", "JavaScript", "React", "Tailwind"]
+    const skills = ['Python', 'C', ' C++', 'Assembly MIPS', 'HTML', "CSS", "JavaScript", "React.js", "Tailwind CSS"]
 
     const write = (typewriter) => {
     
@@ -17,7 +17,7 @@ const Home = () => {
                 
             <div className="flex py-2 md:scale-150 my-7 flex-col items-center hover:cursor-default scale-110">
                 <h1 className="text-white font-signature scale-125 md:text-4xl"> 
-                    <samp>Hello. </samp>
+                    <samp>Hello! </samp>
                     <samp className="hover:text-yellow-100 hover:cursor-pointer">I'm Rafael Rios</samp>
                 </h1>
                 <h2 className="text-emerald-100/25 mx-10 scale-110 font-base my-2 md:my-5 font-bold md:text-2xl

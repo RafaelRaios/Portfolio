@@ -2,11 +2,39 @@ import React, { useState } from "react"
 import { BiArrowFromLeft, BiArrowFromRight } from "react-icons/bi";
 import alagoano from "../assets/images/alagoano.png"
 import site from "../assets/images/site.png"
+import { unmount } from "react-scroll/modules/mixins/scroller";
 
 const Feitos = () => {
     const [index, setIndex] = useState(0)
+    const upIndex = () => {
+        console.log(index)
+                    if(index < repositorio.length - 1) {
+                        setIndex(index + 1)
+                    }
+                    else {
+                        setIndex(0)
+                    }
+    }
+
+    const downIndex = () => {
+        console.log(index)
+                    if(index > 0) {
+                        setIndex(index - 1)
+                    }
+                    else {
+                        setIndex(repositorio.length - 1)
+                    }
+    }
+
     const [text1, setText1] = useState(false)
 
+    const alagon_text = {
+        true: (<>...<samp className="text-cyan-400 cursor-pointer" onClick={() => {setText1(!text1)}}>Read More</samp></>),
+        false: (<><samp className="text-white my-4 font-base justify-center items-center cursor-pointer" onClick={() => setText1(!text1)}> como plataformas que  matam o jogador ao pousar nela.
+        Nesse jogo eu fui responsável pelo game desing, pelos sprites, 
+        pela programação do atirador,do personagem principal e pelas
+         telas de vitória e derrota</samp></>),
+    }
     
 
     const repositorio = [
@@ -38,20 +66,13 @@ const Feitos = () => {
                     <p className="text-white my-4 font-base justify-center items-center">
                     
                     <div >
-                    {!text1 && <p className="">Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
-                    Adventures é um jogo de plataforma baseado em jogos como I Wanna be The Guy e cat mario, assim como um toque cômico do 
-                    jogo brasileiro Mineirinho Ultra Adventures,  em resumo esse jogo é um 
-                    jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitada
-                    s  ... <samp className="text-cyan-400 cursor-pointer" onClick={() => setText1(!text1)}>Read More</samp></p> }
-                    
-                    {text1 && <p>Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
+                   <p className="">Alagoaninho adventures é um mini jogo feito em grupo para a disciplina de introdução a programação na UFPE, Alagoaninho
                     Adventures é um jogo de plataforma baseado em jogos como I Wanna be The Guy e cat mario, assim como um toque cômico do 
                     jogo brasileiro Mineirinho Ultra Adventures,  em resumo esse jogo é um 
                     jogo de plataforma voltado para proporcionar grandes dificuldades o jogador, de maneiras inusitadas 
-                    <samp className="text-white my-4 font-base justify-center items-center cursor-pointer" onClick={() => setText1(!text1)}> como plataformas que  matam o jogador ao pousar nela.
-                         Nesse jogo eu fui responsável pelo game desing, pelos sprites, 
-                         pela programação do atirador,do personagem principal e pelas
-                          telas de vitória e derrota</samp></p> }
+                   {alagon_text[text1]}</p>
+                    
+                    
                     </div>
                     </p>
                 </div>
@@ -67,13 +88,7 @@ const Feitos = () => {
                 my-auto md:mx-5"
                 onClick={() => {
                     
-                    console.log(index)
-                    if(index > 0) {
-                        setIndex(index - 1)
-                    }
-                    else {
-                        setIndex(repositorio.length - 1)
-                    }
+                    downIndex()
                     
                 }}>
                     <div className="p-3"><BiArrowFromRight size={50}/></div>
@@ -85,15 +100,9 @@ const Feitos = () => {
                 md:my-auto md:mx-5"
                 onClick={() => {
                     
-                    console.log(index)
-                    if(index < repositorio.length - 1) {
-                        setIndex(index + 1)
-                    }
-                    else {
-                        setIndex(0)
-                    }
-                    
+                    upIndex()
                 }}>
+                    
                     <div className="p-3"><BiArrowFromLeft size={50}/></div>
                 </button>
                 </div>
