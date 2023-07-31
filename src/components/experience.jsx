@@ -1,5 +1,5 @@
 import React from 'react';
-import {SiCplusplus, SiAdobephotoshop, SiCss3, SiReact, SiTailwindcss, SiAssemblyscript, SiSwift, SiAdobeillustrator} from 'react-icons/si';
+import {SiCplusplus, SiAdobephotoshop, SiCss3, SiReact, SiTailwindcss, SiSwift, SiAdobeillustrator} from 'react-icons/si';
 import {AiFillHtml5} from 'react-icons/ai';
 import {DiJavascript, DiPython} from 'react-icons/di'
 import cIcon from '../assets/images/cIcon.png'
@@ -33,9 +33,25 @@ const Experience = () => {
       lin: (<DiJavascript/>)
     },
     {
-      nome: "Assembly MIPS",
-      lin: (<SiAssemblyscript/>)
+      nome: "React",
+      lin: (<SiReact/>)
     },
+    {
+      nome: "Tailwind",
+      lin: (<SiTailwindcss/>)
+    },
+    {
+      nome: "Photoshop",
+      lin: (<SiAdobephotoshop/>)
+    },
+    {
+      nome: "Photoshop",
+      lin: (<SiAdobephotoshop/>)
+    },
+    {
+      nome: "Ilustrator",
+      lin: (<SiAdobeillustrator/>)
+    }
   ]
 
   return (
