@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect"
 
 
 const Home = () => {
-    const skills = ['Python', 'C', ' C++', 'Assembly MIPS', 'HTML', "CSS", "JavaScript", "React.js", "Tailwind CSS"]
+    const skills = ['Python', 'C', ' C++', 'java', 'Assembly MIPS', 'HTML', "CSS", "JavaScript", "React.js", "Tailwind CSS"]
 
     const write = (typewriter) => {
     
