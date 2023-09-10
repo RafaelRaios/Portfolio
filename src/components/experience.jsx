@@ -61,29 +61,62 @@ const Experience = () => {
     }
   ]
 
+  let index = 0;
+
+  const soma = () => {
+    index = index + 1;
+    if(index >= skills.size) {
+      index = 0
+    }
+  }
+
+  const sub = () => {
+    index = index - 1;
+    if(index <= 0) {
+      index = skills.size - 1;
+    }
+  }
+
   const exp = skills.map((link) => 
-    <li key={link.id} className='flex flex-row items-center px-5 my-10 text-gray-300 hover:text-yellow-100'>
+    <li key={link.id} className='flex md:flex-row items-center px-5 my-10 text-gray-300 hover:text-yellow-100'>
       <div className='flex flex-col items-center'>
         {link.lin}
-        {link.nome}
+        <samp className='hidden md:flex'>{link.nome}</samp>
+      
       </div>
-      <h1 className='scale-150 px-2'>,</h1>
+      <h1 className='scale-150 px-2 '>,</h1>
     </li>
   );
 
+
   return (
-    <div name="experiências" className='w-full h-screen items-center'>
-      <div className='bg-gray-600/90 scale-75 items-center flex flex-row rounded-md '>
-        <div className=' flex flex-col my-20 px-10'>
-          
-          <h1 className='flex flex-row items-center text-3xl'>
-            <samp className='text-indigo-800 px-3'>const </samp> <samp className='px-4 text-blue-600'>Experiences</samp> 
-            <samp className='text-gray-800'>=</samp> <TbBracketsContainStart size={60}/>
+    <div name="experiências" className='w-full md:h-screen items-center'>
+      <div className='bg-gradient-to-b from-gray-800/90 from-0.02% md:from-2% to-gray-600/90 scale-75 items-center 
+      flex flex-row rounded-md ' onClick={() => {
+        console.log(index);
+        soma();
+      }}>
+        <div className=' flex flex-col py-10'>
+          <div class="top mb-2 flex scale-115 px-10 ">
+            <div class="h-3 w-3 bg-red-500 rounded-full hover:scale-110 cursor-pointer"></div>
+            <div class="ml-2 h-3 w-3 bg-orange-300 rounded-full hover:scale-110 cursor-pointer"></div>
+            <div class="ml-2 h-3 w-3 bg-green-500 rounded-full hover:scale-110 cursor-pointer"></div>
+          </div>
+          <h1 className='flex flex-row items-center text-3xl my-10 px-2'>
+            <samp className='text-indigo-800 px-3'>const </samp> <samp className='px-2 text-blue-600'>Experiences</samp> 
+            <samp className='text-gray-800'>=</samp> <TbBracketsContainStart size={tamanho}/>
           </h1>
-          <div className='flex flex-row py-10 px-14'>
+          <div className='hidden md:flex flex-col md:flex-row py-10 my-5 pl-14 md:pl-14 justify-between'>
               {exp}
           </div>
-          <TbBracketsContainEnd size={60} />
+          <div className='md:hidden '>
+          
+          </div>
+
+          <h1 className='px-10'>
+            <TbBracketsContainEnd size={tamanho} />
+          </h1>
+          
           
         </div>
         
