@@ -61,21 +61,8 @@ const Experience = () => {
     }
   ]
 
-  let index = 0;
-
-  const soma = () => {
-    index = index + 1;
-    if(index >= skills.size) {
-      index = 0
-    }
-  }
-
-  const sub = () => {
-    index = index - 1;
-    if(index <= 0) {
-      index = skills.size - 1;
-    }
-  }
+ // const [index, setIndex] = useState(0);
+  
 
   const exp = skills.map((link) => 
     <li key={link.id} className='flex md:flex-row items-center px-5 my-10 text-gray-300 hover:text-yellow-100'>
@@ -93,8 +80,7 @@ const Experience = () => {
     <div name="experiências" className='w-full md:h-screen items-center'>
       <div className='bg-gradient-to-b from-gray-800/90 from-0.02% md:from-2% to-gray-600/90 scale-75 items-center 
       flex flex-row rounded-md ' onClick={() => {
-        console.log(index);
-        soma();
+        
       }}>
         <div className=' flex flex-col py-10'>
           <div class="top mb-2 flex scale-115 px-10 ">
