@@ -5,31 +5,17 @@ const Sobre = () => {
 
     const tradutor = [
         {
-            "port": (<> <samp className="mx-4"></samp>Prazer em conhecelo, me chamo Rafael Rios e eu sou um desenvolvedor de software, nasci na capital do estado
-                de Alagoas, Maceió, onde morei até meus 19 anos, quando mais novo eu não sabia mt bem o que queria ser e fazer quando
-                me tornasse um adulto, pensava em diversas opções, mas nenhuma parecia se encaixar comigo, nunca tive dificuldades com
-                a escola, ao mesmo tempo nenhuma matéria realmente despertava muito interesse meu, o que me levava a sempre fazer apenas 
-                o mínimo necessário, com exeção de matématica que eu tinha um apreço um pouco maior, porem desde mais novo eu sempre fui
-                apaixonado por videogames, então acho que quando eu tinha 14 anos me surgiu a ideia de trabalhar com isso, na epoca minha 
-                escola estava oferecendo um mini curso com Arduino então decidi tentar, me diverti bastante fazendo um projeto de uma luva
-                que funcionaria como mouse e por isso decidi seguir com a formação em ciências da computação, como uma curiosidade extra além 
-                de video games, tenho outros hobbies como desenhar, jogos de tabuleiro, academia, volei, tenis de mesa, futebol e esportes no
-                geral.
+            "port": (<> <samp className="mx-4"></samp>Sou Rafael Rios, estudante de Ciência da Computação na UFPE. Desde cedo, sempre fui fascinado pela tecnologia e suas possibilidades. Essa paixão me levou a escolher uma carreira em desenvolvimento de software, onde posso criar soluções inovadoras e impactar positivamente a vida das pessoas.
+
+Durante minha trajetória acadêmica, desenvolvi uma sólida base de conhecimento em programação, algoritmos, estrutura de dados, e engenharia de software. Além disso, me dediquei ao estudo do desenvolvimento de jogos, uma área que me encanta pela capacidade de combinar criatividade com tecnologia para criar experiências interativas envolventes.
+
+No meu tempo livre, gosto de tentar desenvolver projetos próprios na area como uma demonstração de jogo, ou algum site que me ajude a aperfeiçoar minhas habilidades.
             </>),
-            "eng": (<><samp className="mx-4"></samp></>),
-        },
-        {
-            "port": (<><samp className="mx-4"></samp>Nessa época em que decidi me tornar um prgramador no Brasil e principalmente na 
-            minha cidade natal essa não era uma profissão muito valorizada, muito menos haviam muitas oportunidades, então meus pais
-            apesar de não me proibirem de seguir carreira na área me disseram que eu teria que ir para o estado de Pernanbuco e fazer
-            a graduação na UFPE que possuia um curso de ciências da computação bastante renomado e com diversas iniciativas privadas
-            dentro dela, e esse era meu plano, no entanto a pandemia do novo coronavírus aconteceu e mudou o cenário, a profissão do 
-            programador começou cada vez mais a se valorizar mesmo em Maceió, com a pandemia eu também e atrapalhei muito na minha rotina
-            assim como também tive certeza que ainda não estava preparado para morar sozinho em outro estado, então comecei o curso na 
-            faculdade federal da minha cidade, na UFAL, que agora era uma opção mais do que viável, onde cursei um período em EAD e gostei
-            bastante do curso, por alguma irônia do destino fiz o ENEM mais uma vez naquele ano e após conversar com minha decidi 
-            finalmente ir para UFPE.</>),
-            "eng": (<><samp className="mx-4"></samp></>),
+            "eng": (<><samp className="mx-4">I am Rafael Rios, a Computer Science student at UFPE. From a young age, I have always been fascinated by technology and its possibilities. This passion led me to choose a career in software development, where I can create innovative solutions and positively impact people's lives.
+
+During my academic journey, I developed a solid foundation in programming, algorithms, data structures, and software engineering. Additionally, I dedicated myself to studying game development, an area that captivates me due to its ability to combine creativity with technology to create engaging interactive experiences.
+
+In my spare time, I enjoy developing my own projects in the field, such as a game demo or a website that helps me refine my skills.</samp></>),
         }
     ]
 
