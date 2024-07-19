@@ -33,12 +33,9 @@ In my spare time, I enjoy developing my own projects in the field, such as a gam
                 </p>
 
                 <br />
-
-                <p className="py-5 mb-10 md:mb-0 font-base text-justify md:scale-90">
-                {tradutor[1]["port"]}
-                </p>
+                
                 <div className="flex items-center bg-gradient-to-t from-gray-200/90 from-45% to-neutral-100/90 text-black p-3
-                rounded-full hover:cursor-pointer hover:scale-110 duration-300 ">
+                rounded-full hover:cursor-pointer hover:scale-110 duration-300 invisible">
                     <p>curriculo</p>
                     <AiOutlineVerticalAlignBottom />
                 </div>
