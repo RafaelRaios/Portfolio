@@ -3,6 +3,8 @@ import { BiArrowFromLeft, BiArrowFromRight } from "react-icons/bi";
 import alagoano from "../assets/images/alagoano.png"
 import site from "../assets/images/site.png"
 import splotify from "../assets/images/splotify.png"
+import paine_cards from "../assets/images/paine-cards.png"
+import filter_project from "../assets/images/filter-project.png"
 import { unmount } from "react-scroll/modules/mixins/scroller";
 
 const Feitos = () => {
@@ -80,6 +82,24 @@ const Feitos = () => {
             )
         },
         {
+            img: paine_cards,
+            child: (
+                <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md items-center
+                max-w-screen-lg mx-auto">
+                    <h2 className="text-white text-2xl md:text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4">Painel Cards</h2>
+                    <a href="https://github.com/RafaelRaios/painel-cards" target="blank"
+                    className="flex scale-95 items-center">
+                        <img src={paine_cards} alt="" link/>
+                    </a>
+                    <a href="https://painel-cards.vercel.app/" target="blank">
+                        <p className="text-white my-4 font-base justify-center items-center cursor-pointer" >
+                        Painel Cards é um mini site feito por mim para treinar a componentização no Angular. Clicando na imagem, você será direcionado para o link do repositório no GitHub, e clicando neste texto, você irá para o site diretamente.
+                        </p>
+                    </a>
+                </div>
+            )
+        },
+        {
             img: splotify,
             child: (
                 <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md items-center
@@ -90,19 +110,30 @@ const Feitos = () => {
                         <img src={splotify} alt="" link/>
                     </a>
                     <p className="text-white my-4 font-base justify-center items-center">
-                        Splotify é um tocador de músicas feito em java com auxilio da biblioteca java swing na cadeira de infraestrutura de 
-                        software, o intuito principal desse pequeno toca musicas é executar na prática o conceito de Threads nas diversas 
-                        funcionalidades paralelas do player
-                    <div >
-                   <p className=""> 
-                   </p>
-                    
-                    
-                    </div>
+                    Splotify é um tocador de músicas feito em Java com o auxílio da biblioteca Java Swing, desenvolvido na cadeira de Infraestrutura de Software. O intuito principal desse pequeno tocador de músicas é aplicar na prática o conceito de Threads nas diversas funcionalidades paralelas do player.
                     </p>
                 </div>
             )
-        }
+        },
+        {
+            img: filter_project,
+            child: (
+                <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md items-center
+                max-w-screen-lg mx-auto">
+                    <h2 className="text-white text-2xl md:text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4">Filter Project</h2>
+                    <a href="https://github.com/RafaelRaios/filter-project" target="blank"
+                    className="flex scale-95 items-center">
+                        <img src={filter_project} alt="" link/>
+                    </a>
+                    <a href="https://filter-project-ashy.vercel.app/" target="blank">
+                        <p className="text-white my-4 font-base justify-center items-center cursor-pointer" >
+                        Filter Project é um projeto em Angular de um site que filtra as pessoas cadastradas no banco de dados local e disponibiliza as informações da pessoa selecionada. Clicando na imagem, você será direcionado para o link do repositório no GitHub, e clicando neste texto, você irá para o site diretamente.
+                        </p>
+                    </a>
+                </div>
+            )
+        },
+
     ]
 
     return (
