@@ -3,7 +3,7 @@ import { BiArrowFromLeft, BiArrowFromRight } from "react-icons/bi";
 import alagoano from "../assets/images/alagoano.png"
 import site from "../assets/images/site.png"
 import splotify from "../assets/images/splotify.png"
-import paine_cards from "../assets/images/paine-cards.png"
+import paine_cards from "../assets/images/painel-cards.png"
 import filter_project from "../assets/images/filter-project.png"
 import { unmount } from "react-scroll/modules/mixins/scroller";
 
