@@ -50,7 +50,7 @@ const SocialLinks = () => {
 
     return (
         <div className=" items-center  text-white fixed px-4 md:top-[80%] top-[90%] 2xl:top-[95%]
-           flex">
+           flex flex-col">
             <ul className="flex md:inline ">
                 {socialL}
             </ul>
