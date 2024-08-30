@@ -5,7 +5,7 @@ import site from "../assets/images/site.png"
 import splotify from "../assets/images/splotify.png"
 import paine_cards from "../assets/images/painel-cards.png"
 import filter_project from "../assets/images/filter-project.png"
-import bd_cinema from "../assets/images/BDCinema.jpg"
+import bd_cinema from "../assets/images/BDCInema.png"
 import alagoano2 from "../assets/images/alagoano2.png"
 
 const Feitos = () => {
