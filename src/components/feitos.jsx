@@ -7,6 +7,7 @@ import paine_cards from "../assets/images/painel-cards.png"
 import filter_project from "../assets/images/filter-project.png"
 import bd_cinema from "../assets/images/BDCInema.png"
 import alagoano2 from "../assets/images/alagoano2.png"
+import pokedex from "../assets/images/Pokedex.png"
 
 const Feitos = () => {
     const [index, setIndex] = useState(0)
@@ -56,6 +57,25 @@ const Feitos = () => {
                 </div>
             )
             
+        },
+        {
+            img: pokedex,
+            child: (
+                <div className="scale-25 md:scale-75 bg-gradient-to-t from-gray-900/90 from-45% to-neutral-800/90 p-4 rounded-md items-center
+                max-w-screen-lg mx-auto">
+                    <h2 className="text-white text-2xl md:text-4xl font-signature py-3 mx-4 md:mx-10 md:my-4 ">Pokedex</h2>
+                    <a href="https://github.com/RafaelRaios/Pokedex1" target="blank"
+                    className="flex scale-115 ml-10">
+                        <img src={pokedex} alt="" link/>
+                    </a>
+                    <a href="https://pokedex-steel-mu.vercel.app/" target="blank">
+                        <p className="text-white my-4 font-base justify-center items-center cursor-pointer hover:text-cyan-200" >
+                        O site "Pokédex" apresenta uma interface interativa onde os usuários podem pesquisar e visualizar dados detalhados de Pokémons, como tipos, habilidades e status. O design é simplificado, com carregamento rápido, permitindo uma navegação eficiente pelos dados da API Pokémon, facilitando a consulta rápida de informações.
+                        Clicando na imagem, você será direcionado para o link do repositório no GitHub, e clicando neste texto, você irá para o site diretamente.
+                        </p>
+                    </a>
+                </div>
+            )
         },
         {
             img: alagoano,
@@ -128,7 +148,8 @@ const Feitos = () => {
                     </a>
                     <a href="https://filter-project-ashy.vercel.app/" target="blank">
                         <p className="text-white my-4 font-base justify-center items-center cursor-pointer hover:text-cyan-200" >
-                        Filter Project é um projeto em Angular de um site que filtra as pessoas cadastradas no banco de dados local e disponibiliza as informações da pessoa selecionada. Clicando na imagem, você será direcionado para o link do repositório no GitHub, e clicando neste texto, você irá para o site diretamente.
+                        Filter Project é um projeto em Angular de um site que filtra as pessoas cadastradas no banco de dados local e disponibiliza as informações da pessoa selecionada.
+                         Clicando na imagem, você será direcionado para o link do repositório no GitHub, e clicando neste texto, você irá para o site diretamente.
                         </p>
                     </a>
                 </div>

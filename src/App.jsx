@@ -34,9 +34,9 @@ function App() {
       
         <Navbar />
         <Home />
+        <Experience />
         <Sobre/>
         <Feitos/>
-        <Experience />
         <Contact />
         <SocialLinks />
       </div>

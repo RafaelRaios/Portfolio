@@ -12,15 +12,15 @@ const Navbar = () => {
         },
         {
             id: 2,
-            lin: "sobre mim",
+            lin: "experiências",
         },
         {
             id: 3,
-            lin: "portfolio",
+            lin: "sobre mim",
         },
         {
             id: 4,
-            lin: "experiências",
+            lin: "portfolio",
         },
         {
             id: 5,

@@ -1,10 +1,10 @@
 import React from 'react';
-import {SiCplusplus, SiAdobephotoshop, SiCss3, SiReact, SiTailwindcss, SiSwift, SiAdobeillustrator} from 'react-icons/si';
+import {SiCplusplus, SiTypescript, SiCss3, SiReact, SiTailwindcss, SiAngular} from 'react-icons/si';
 import {AiFillHtml5} from 'react-icons/ai';
 import {DiJava} from 'react-icons/di';
 import {DiJavascript, DiPython} from 'react-icons/di'
-import cIcon from '../assets/images/cIcon.png'
 import {TbBracketsContainStart, TbBracketsContainEnd} from 'react-icons/tb';
+
 
 const Experience = () => {
   const tamanho = 60;
@@ -41,27 +41,26 @@ const Experience = () => {
     },
     {
       id: 8,
+      nome: "Typescript",
+      lin: (<SiTypescript size={tamanho -15}/>)
+    },
+    {
+      id: 9,
       nome: "React",
       lin: (<SiReact size={tamanho}/>)
     },
     {
-      id: 9,
-      nome: "Tailwind",
-      lin: (<SiTailwindcss size={tamanho}/>)
-    },
-    {
       id: 10,
-      nome: "Photoshop",
-      lin: (<SiAdobephotoshop size={tamanho - 5}/>)
+      nome: "Angular",
+      lin: (<SiAngular size={tamanho -10}/>)
     },
     {
       id: 11,
-      nome: "Ilustrator",
-      lin: (<SiAdobeillustrator size={tamanho - 5}/>)
+      nome: "Tailwind",
+      lin: (<SiTailwindcss size={tamanho}/>)
     }
   ]
 
- // const [index, setIndex] = useState(0);
   
 
   const exp = skills.map((link) => 
@@ -92,11 +91,8 @@ const Experience = () => {
             <samp className='text-indigo-800 px-3'>const </samp> <samp className='px-2 text-blue-600'>Experiences</samp> 
             <samp className='text-gray-800'>=</samp> <TbBracketsContainStart size={tamanho}/>
           </h1>
-          <div className='hidden md:flex flex-col md:flex-row py-10 my-5 pl-14 md:pl-14 justify-between'>
+          <div className='grid md:grid-cols-5 grid-cols-1 pl-20 md:pl-44 justify-between items-center'>
               {exp}
-          </div>
-          <div className='md:hidden '>
-          
           </div>
 
           <h1 className='px-10'>
